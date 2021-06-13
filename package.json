@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:distributor": "nodemon --exec babel-node ./distributor.js",
+    "start:goods": "nodemon --exec babel-node ./micro/goods.js",
+    "start:purchases": "nodemon --exec babel-node ./micro/purchases.js",
+    "start:members": "nodemon --exec babel-node ./micro/members.js",
+    "start:gate": "nodemon --exec babel-node ./gate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "7.14.3",
+    "@babel/core": "7.14.3",
+    "@babel/node": "7.14.2",
+    "@babel/preset-env": "7.14.4"
+  },
+  "dependencies": {
+    "mysql": "2.18.1",
+    "nodemon": "2.0.7"
+  }
+}
